@@ -1,1 +1,2 @@
 type sysfs_battery_saver, fs_type, sysfs_type;
+type kcal_dev, sysfs_type, fs_type;
