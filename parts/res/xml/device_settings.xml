@@ -14,7 +14,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
         android:key="audio"
@@ -70,6 +72,19 @@
                 android:targetClass="org.lineageos.settings.display.KcalSettingsActivity"
                 android:targetPackage="org.lineageos.settings.display" />
         </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="vibration"
+        android:title="@string/vibration_title">
+
+        <org.lineageos.settings.preferences.VibrationSeekBarPreference
+            android:key="vibration_strength"
+            android:title="@string/vibration_strength_title"
+            android:min="10"
+            android:max="100"
+            android:defaultValue="85"
+            settings:units="%" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -27,7 +27,9 @@ import androidx.preference.ListPreference;
 import org.lineageos.settings.R;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalSettingsActivity;
+import org.lineageos.settings.preferences.VibrationSeekBarPreference;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
+import org.lineageos.settings.utils.VibrationUtils;
 
 public class DeviceSettingsFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -37,6 +39,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private static final String PREF_PRESET = "dirac_preset_pref";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private static final String PREF_KCAL_SETTINGS = "kcal_settings";
+    private static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
 
     private SwitchPreference mDiracPref;
 
@@ -45,6 +48,8 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
 
     private Preference mKcalSettingsPref;
     private Preference mClearSpeakerPref;
+
+    private VibrationSeekBarPreference mVibStrengthPref;
 
     private DiracUtils mDiracUtils;
 
@@ -81,6 +86,15 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
             startActivity(intent);
             return true;
         });
+
+        mVibStrengthPref = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
+
+        if (VibrationUtils.isAvailable()) {
+            mVibStrengthPref.setOnPreferenceChangeListener(this);
+            mVibStrengthPref.setValue(VibrationUtils.getVibStrength());
+        } else {
+            mVibStrengthPref.setEnabled(false);
+        }
     }
 
     @Override
@@ -95,6 +109,9 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
                 return true;
             case PREF_PRESET:
                 mDiracUtils.setLevel(String.valueOf(newValue));
+                return true;
+            case PREF_VIBRATION_STRENGTH:
+                VibrationUtils.setVibStrength((int) newValue);
                 return true;
             default:
                 return false;

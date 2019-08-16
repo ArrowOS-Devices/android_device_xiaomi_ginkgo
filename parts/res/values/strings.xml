@@ -88,4 +88,9 @@
     <string name="reset_default_button_title">Reset to default configuration</string>
     <string name="reset_default_button_summary">Reset all the configurations of this screen</string>
     <string name="contrast_slider_title">Contrast</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Vibration Control</string>
+    <string name="vibration_strength_title">Strength</string>
+
 </resources>
