@@ -37,6 +37,7 @@ persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
 # IORap
+iorapd.readahead.enable=true
 ro.iorapd.enable=true
 
 # Incremental FS
