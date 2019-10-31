@@ -142,6 +142,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Data
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
+ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
 # Display
