@@ -42,3 +42,6 @@
 
 # Power HAL
 /vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr   u:object_r:hal_power_default_exec:s0
+
+# Data files
+/data/per_boot(/.*)?                                                 u:object_r:per_boot_file:s0
