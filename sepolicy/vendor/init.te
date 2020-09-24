@@ -3,3 +3,5 @@ allow init firmware_file:filesystem getattr;
 allow init firmware_file:file mounton;
 allow init vendor_file:file execute;
 allow init adsprpcd_file:file mounton;
+allow init per_boot_file:file ioctl;
+allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
