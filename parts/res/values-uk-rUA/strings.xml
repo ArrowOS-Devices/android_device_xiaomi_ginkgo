@@ -16,6 +16,10 @@
      limitations under the License.
 -->
 <resources>
+     <!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Додаткові налаштування</string>
+    <string name="audio_title">Аудіо</string>
     <!-- Dirac settings -->
     <string name="dirac_title">Покращення звуку \"Мі Sound\"</string>
     <string name="dirac_summary">Поліпшити якість звуку</string>
@@ -58,4 +62,8 @@
     <string name="dirac_preset_metal">Метал</string>
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Mi звук</string>
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очищення динаміка</string>
+    <string name="clear_speaker_summary">Відтворити 30-и секундний звук для очищення динаміка</string>
+    <string name="clear_speaker_description">Увімкніть цей параметр 1-2 разів, якщо динамік трохи забруднений. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забруднений, запустіть цей параметр 2-5 разів і потрясіть телефон. Динамік повинен дивитися вниз</string>
 </resources>
