@@ -89,4 +89,8 @@ public final class KcalUtils {
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_SATURATION_NODE, 0, sharedPrefs.getInt("saturation_slider", 255));
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_CONTRAST_NODE, 0, sharedPrefs.getInt("contrast_slider", 255));
     }
+
+    public static boolean isKcalSupported() {
+        return FileUtils.fileExists(KCAL_ENABLE_NODE);
+    }
 }

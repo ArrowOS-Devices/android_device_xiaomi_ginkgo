@@ -78,6 +78,7 @@
     <string name="kcal_settings_summary">Adjust the colors of your display using KCAL</string>
     <string name="kcal_enable_title">Enable display color configuration</string>
     <string name="kcal_enable_summary">Enables the configuration of the display color for a custom adjustment</string>
+    <string name="kcal_not_supported">Display color settings is not supported by the kernel</string>
     <string name="red_slider_title">Red</string>
     <string name="green_slider_title">Green</string>
     <string name="blue_slider_title">Blue</string>    
