@@ -71,4 +71,19 @@
     <string name="clear_speaker_title">Pembersih speaker</string>
     <string name="clear_speaker_summary">Putar audio 30-detik untuk membersihkan speaker</string>
     <string name="clear_speaker_description">Jalankan fitur ini satu atau dua kali jika speaker anda sedikit terhalang oleh debu. Atur volume media ke maksimum.\n\nJika speaker sangat terhalang, jalankan fitur ini 2-5 kali sambil menggoyangkan perangkat anda dengan speaker menghadap ke bawah.</string>
+    
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Kalibrasi warna layar</string>
+    <string name="kcal_settings_summary">Sesuaikan warna layar anda menggunakan KCAL</string>
+    <string name="kcal_enable_title">Aktifkan konfigurasi warna layar</string>
+    <string name="kcal_enable_summary">Mengaktifkan konfigurasi warna layar untuk penyesuaian kustom</string>
+    <string name="red_slider_title">Merah</string>
+    <string name="green_slider_title">Hijau</string>
+    <string name="blue_slider_title">Biru</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Kalibrasi warna</string>
+    <string name="saturation_slider_title">Kejenuhan</string>
+    <string name="reset_default_button_title">Setel ulang ke konfigurasi bawaan</string>
+    <string name="reset_default_button_summary">Setel ulang semua konfigurasi layar ini</string>
+    <string name="contrast_slider_title">Kontras</string>
 </resources>
