@@ -81,7 +81,7 @@ public final class KcalUtils {
 
     public static void writeCurrentSettings(SharedPreferences sharedPrefs) {
         FileUtils.writeLine(KcalUtils.KCAL_ENABLE_NODE,
-            sharedPrefs.getBoolean("kcal_enable", false) ? "1" : "0");
+            sharedPrefs.getBoolean("kcal_enable", true) ? "1" : "0");
 
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, sharedPrefs.getInt("red_slider", 256));
         KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 2, sharedPrefs.getInt("green_slider", 256));
