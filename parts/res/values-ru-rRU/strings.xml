@@ -73,6 +73,7 @@
     <string name="clear_speaker_description">Включите этот параметр 1-2 раз, если динамик немного загрязнен. Также поставьте звук на максимальную громкость.\n\nЕсли динамик сильно загрязнен, запустите этот параметр 2-5 раз и потрясите телефон. Динамик должен смотреть вниз</string>
 	
     <!-- Kcal settings -->
+    <string name="display_title">Изображение</string>
     <string name="kcal_settings_title">Калибровка цветов экрана</string>
     <string name="kcal_settings_summary">Редактируйте цвета вашего экрана, используя KCAL</string>
     <string name="kcal_enable_title">Конфигурации цветов экрана</string>
