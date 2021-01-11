@@ -37,11 +37,11 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -130 0
-        C -100 0 -81 4 -56 47
-        C -44 67 -23 80 0 80
-        C 23 80 44 67 56 47
-        C 81 4 100 0 130 0
+        M -135 0
+        C -100 0 -81 4 -59 45
+        C -48 70 -23 80 0 80
+        C 23 80 48 70 59 45
+        C 81 4 100 0 135 0
         L -130 0
         Z
     </string>
