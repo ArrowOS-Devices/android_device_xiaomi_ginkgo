@@ -689,8 +689,6 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/system/framework/ext.jar"</item>
         <item>"/system/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/lib/libsurfaceflinger.so"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
         <item>"/system/lib/libRScpp.so"</item>
         <item>"/system/lib/libRS.so"</item>
         <item>"/system/lib/libRS_internal.so"</item>
