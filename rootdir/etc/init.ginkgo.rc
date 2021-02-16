@@ -143,6 +143,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/vm/dirty_expire_centisecs 3000
     write /proc/sys/vm/dirty_background_ratio 10
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on charger
     chown system system /sys/class/leds/red/brightness
     write /sys/class/leds/red/brightness 255
