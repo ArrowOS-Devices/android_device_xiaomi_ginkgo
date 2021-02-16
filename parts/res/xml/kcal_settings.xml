@@ -18,7 +18,7 @@
 
     <SwitchPreference
         android:key="kcal_enable"
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:icon="@drawable/ic_kcal"
         android:title="@string/kcal_enable_title"
         android:summary="@string/kcal_enable_summary" />
