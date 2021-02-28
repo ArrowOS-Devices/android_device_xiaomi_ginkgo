@@ -6,7 +6,7 @@ on early-init
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
 
-on late-init
+on post-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
