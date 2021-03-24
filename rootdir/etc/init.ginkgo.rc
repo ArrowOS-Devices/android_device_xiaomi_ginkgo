@@ -70,6 +70,9 @@ on property:sys.boot_completed=1
     write /dev/stune/schedtune.prefer_idle 0
     write /dev/stune/schedtune.boost 0
 
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
 on property:vendor.post_boot.parsed=1
     # Setup cpusets
     write /dev/cpuset/top-app/cpus 0-7
