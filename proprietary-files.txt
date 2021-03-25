@@ -2117,21 +2117,11 @@ vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|a0603a5c46e8e
 # Radio - EMBMS - from LA.UM.9.11.r1-03200-NICOBAR.0
 -system_ext/app/embms/embms.apk|e30c32f9e2e5ee2580ff788c76a8969b45199a96
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
-system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml|fe893ef12f3fe036e3d462e010f031b94f218e38
 system_ext/framework/embmslibrary.jar|b5fe26c1cea597af8a1751332d187f2f574816c1
 system_ext/lib64/libembmsmmosal.so|cc4a169473ec37de2696c7700481e38b4f46cdb4
 system_ext/lib64/libembmsmmparser_lite.so|eaa57e7c63d25b78e68132459fdfd598e7b73434
 system_ext/lib64/libembmssqlite.so|5d5bf58fdebe26c30011077ebad1986620019b66
 system_ext/lib64/libembmstinyxml.so|08eee57d42821158a04f37f41f6ab956993e0de9
-system_ext/lib64/libmsp.so|5cec56fde4c61ca773370c23a991f215a3fe0b5a
--system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk|55d502583fc6c4c7b4c99b32154f6ff3a2b21bdd
-vendor/bin/embmsslServer|4a79e6becf59d6eff5a499c21dded1e2bc82762f
-vendor/etc/init/init.embmssl_server.rc|e2f59e5d6223112bdcfbf9e9e69fe6abea3698b1
-vendor/lib64/libembmsservice.so|db4576464c544530b83a3dc17dfaa38af6cf3cb3
-vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|c7723a934596433511b48d8e24da0afb49c37e76
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|b07738cf7722495bbe635c5cc00adc5e2cb179c4
-vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|fbdd42fd97e302c4058ac4be4134382aee48ce52
-vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|ac751795797777b9f2844a6ac4fd9055fa4e98f3
 
 # Radio - IMS - from LA.UM.9.11.r1-03200-NICOBAR.0
 -system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5

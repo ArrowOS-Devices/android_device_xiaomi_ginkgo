@@ -626,16 +626,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- eMBMS HAL Service -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.embmssl</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IEmbms</name>
-            <instance>embmsslServer0</instance>
-        </interface>
-    </hal>
     <!-- Infrared -->
     <hal format="hidl">
         <name>android.hardware.ir</name>
