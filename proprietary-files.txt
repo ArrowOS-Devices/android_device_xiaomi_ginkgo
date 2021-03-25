@@ -1768,10 +1768,6 @@ vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
 vendor/lib64/libsdmextension.so|3f1d81e0025de6721ed45697bf97003dd57b2847
 vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
-# Hang guard - from LA.UM.9.11.r1-03200-NICOBAR.0
-vendor/bin/hang_guard|98a661ebb11dd5e3876e6c9c0c751b640ac70cd7
-vendor/etc/init/hang_guard.rc|365a48f4c25cd360a011eb78c1d970703ee440eb
-
 # IPA
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
@@ -2035,17 +2031,6 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# Qualcomm Trusted Execution Environment (QTEE)
-system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so
-system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
 # Radio
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -2231,7 +2216,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Sensor HAL
+# Sensors HAL
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
@@ -2263,18 +2248,6 @@ vendor/lib64/libsns_low_lat_stream_stub.so|732284783173e95b60429bc830f9db06f764d
 vendor/lib64/libsns_registry_skel.so|117622eb287191079d3e70ed1781c081ae07891f
 vendor/lib64/libssc.so|dc0e5f7378a2f6032a476703823f7cba6296bda6
 vendor/lib64/libssc_default_listener.so|1cb532f9014d7c1fe773ff46b365d6cc4a07e3a6
-
-# Sensors calibration - from LA.UM.9.11.r1-03200-NICOBAR.0
-system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|01d8f70b5687082dd9d19beca565a789d404837c
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|6578e537e3b14c9345ce1be832650f13d8d65085
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml|f4884c1776c9f77c24bfce853fe22627ea4b7f79
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|a82d40451fabc14d0f9c4e9d3bfec1e0db4ede8f
-vendor/lib/libsensorcal.so|f5599f415eb27d098f73b01fa5990906104464f9
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|32ca7896c00a2e20b3f833db5f1981949df245a0
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|afce7c964fdf25be2b4bd423d713bdf608b47c05
-vendor/lib64/libsensorcal.so|1a38aebe506db1e9841cb36fbae054ba1543a9ab
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|1e3d653eff4f3d6df49d6492dd1327f984f1303d
 
 # Sensors configs
 vendor/etc/sensors/config/bmm150_0.json
@@ -2444,13 +2417,6 @@ vendor/etc/sensors/proto/sns_ppg.proto
 vendor/etc/sensors/proto/sns_gyro.proto
 vendor/etc/sensors/sns_reg_config
 
-# Servicetracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-
 # SOTER
 -app/SoterService/SoterService.apk
 system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
@@ -2544,7 +2510,6 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/bin/sigma_dut
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
