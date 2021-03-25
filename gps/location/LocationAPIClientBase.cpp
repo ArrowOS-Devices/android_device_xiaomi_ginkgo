@@ -158,6 +158,7 @@ uint32_t LocationAPIControlClient::locAPIGnssUpdateConfig(GnssConfig config)
                 }
                 mRequestQueues[CTRL_REQUEST_CONFIG_UPDATE].push(new GnssUpdateConfigRequest(*this));
                 retVal = LOCATION_ERROR_SUCCESS;
+                delete [] idArray;
             }
         }
     }
@@ -180,6 +181,7 @@ uint32_t LocationAPIControlClient::locAPIGnssGetConfig(GnssConfigFlagsMask mask)
             }
             mRequestQueues[CTRL_REQUEST_CONFIG_GET].push(new GnssGetConfigRequest(*this));
             retVal = LOCATION_ERROR_SUCCESS;
+            delete [] idArray;
         }
     }
     pthread_mutex_unlock(&mMutex);

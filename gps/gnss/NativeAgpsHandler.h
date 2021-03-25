@@ -1,4 +1,4 @@
-/* Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2020, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -26,35 +26,39 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
+#ifndef NATIVEAGPSHANDLER_H
+#define NATIVEAGPSHANDLER_H
 
-#ifndef LOCATION_UTIL_H
-#define LOCATION_UTIL_H
+#include <cinttypes>
+#include <string.h>
+#include <gps_extended_c.h>
+#include <IDataItemObserver.h>
+#include <IDataItemCore.h>
+#include <IOsObserver.h>
 
-#include <android/hardware/gnss/2.0/types.h>
-#include <LocationAPI.h>
-#include <GnssDebug.h>
+using namespace std;
+using loc_core::IOsObserver;
+using loc_core::IDataItemObserver;
+using loc_core::IDataItemCore;
 
-namespace android {
-namespace hardware {
-namespace gnss {
-namespace V2_0 {
-namespace implementation {
+class GnssAdapter;
 
-void convertGnssLocation(Location& in, V1_0::GnssLocation& out);
-void convertGnssLocation(Location& in, V2_0::GnssLocation& out);
-void convertGnssLocation(const V1_0::GnssLocation& in, Location& out);
-void convertGnssLocation(const V2_0::GnssLocation& in, Location& out);
-void convertGnssConstellationType(GnssSvType& in, V1_0::GnssConstellationType& out);
-void convertGnssConstellationType(GnssSvType& in, V2_0::GnssConstellationType& out);
-void convertGnssSvid(GnssSv& in, int16_t& out);
-void convertGnssSvid(GnssMeasurementsData& in, int16_t& out);
-void convertGnssEphemerisType(GnssEphemerisType& in, GnssDebug::SatelliteEphemerisType& out);
-void convertGnssEphemerisSource(GnssEphemerisSource& in, GnssDebug::SatelliteEphemerisSource& out);
-void convertGnssEphemerisHealth(GnssEphemerisHealth& in, GnssDebug::SatelliteEphemerisHealth& out);
+class NativeAgpsHandler : public IDataItemObserver {
+public:
+    NativeAgpsHandler(IOsObserver* sysStatObs, GnssAdapter& adapter);
+    ~NativeAgpsHandler();
+    AgpsCbInfo getAgpsCbInfo();
+    // IDataItemObserver overrides
+    virtual void notify(const list<IDataItemCore*>& dlist);
+    inline virtual void getName(string& name);
+private:
+    static NativeAgpsHandler* sLocalHandle;
+    static void agnssStatusIpV4Cb(AGnssExtStatusIpV4 statusInfo);
+    void processATLRequestRelease(AGnssExtStatusIpV4 statusInfo);
+    IOsObserver* mSystemStatusObsrvr;
+    bool mConnected;
+    string mApn;
+    GnssAdapter& mAdapter;
+};
 
-}  // namespace implementation
-}  // namespace V2_0
-}  // namespace gnss
-}  // namespace hardware
-}  // namespace android
-#endif // LOCATION_UTIL_H
+#endif // NATIVEAGPSHANDLER_H

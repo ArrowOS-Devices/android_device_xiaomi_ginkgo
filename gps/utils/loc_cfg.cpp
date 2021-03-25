@@ -453,6 +453,7 @@ void loc_read_conf_long(const char* conf_file_name, const loc_param_s_type* conf
     /* Initialize logging mechanism with parsed data */
     loc_logger_init(DEBUG_LEVEL, TIMESTAMP);
     log_buffer_init(sLogBufferEnabled);
+    log_tag_level_map_init();
 }
 
 /*=============================================================================

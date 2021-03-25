@@ -78,7 +78,7 @@ struct GnssInterface {
     void (*agpsDataConnFailed)(AGpsExtType agpsType);
     void (*getDebugReport)(GnssDebugReport& report);
     void (*updateConnectionStatus)(bool connected, int8_t type, bool roaming,
-                                   NetworkHandle networkHandle);
+                                   NetworkHandle networkHandle, std::string& apn);
     void (*odcpiInit)(const OdcpiRequestCallback& callback, OdcpiPrioritytype priority);
     void (*odcpiInject)(const Location& location);
     void (*blockCPI)(double latitude, double longitude, float accuracy,
@@ -109,6 +109,8 @@ struct GnssInterface {
     uint32_t (*gnssUpdateSecondaryBandConfig)(const GnssSvTypeConfig& secondaryBandConfig);
     uint32_t (*gnssGetSecondaryBandConfig)();
     void (*resetNetworkInfo)();
+    uint32_t (*configEngineRunState)(PositioningEngineMask engType,
+                                     LocEngineRunState engState);
 };
 
 struct BatchingInterface {
