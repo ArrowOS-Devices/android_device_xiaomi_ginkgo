@@ -1463,9 +1463,6 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|07bf28004086b972367c44703bd02
 vendor/lib64/vendor.qti.latency@2.0.so|5d2d0b8a2330de03cea125cff2d6220f78cab34b
 
 # ConfigStore - from LA.UM.9.11.r1-03200-NICOBAR.0
-system_ext/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar|b2a4b9942cb4b66fc3e1a8595b4cc40ab0cc576b
-system_ext/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|c868379bade6aefb03c6b2f7e66d262905ab0fa4
-system_ext/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|8176c53d20a0fd9d5089cad61d424cb0d258cec7
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|823b252bc1f56065481a445e031c54e329c5db04
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|00e75916b81fa6714753ff43e49248a1fba990f6
@@ -2492,7 +2489,6 @@ vendor/lib/libmiracast.so|1288361d66810432d73139c3b4b15e65f7447813
 vendor/lib/libmmosal.so|31ca68b67eae1a3822b5310fb034f2722506f248
 vendor/lib/libmmrtpdecoder_proprietary.so|4e9d5b404ba2455b3e8663f0a91f5b02be18c5fd
 vendor/lib/libmmrtpencoder_proprietary.so|2386d7e84428c7511e896cdaa7f3eed1e68752a3
-vendor/lib/libwfdaac_vendor.so|ce7463344d2a0e317ffc9c57964ae78f6a81900f
 vendor/lib/libwfdcodecv4l2_proprietary.so|b2f8282a8c203df359ef3bcd0e694796aff534fe
 vendor/lib/libwfdcommonutils_proprietary.so|4b71ff7e1994b493cfee47445928f565a169a7e1
 vendor/lib/libwfdconfigutils_proprietary.so|8565751ecbfbb8c468246ad4bebc149454cafc8b
