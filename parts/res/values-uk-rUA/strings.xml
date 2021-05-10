@@ -16,6 +16,10 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Додаткові налаштування</string>
+    <string name="audio_title">Аудіо</string>
     <!-- Dirac settings -->
     <string name="dirac_title">Покращення звуку \"Мі Sound\"</string>
     <string name="dirac_summary">Поліпшити якість звуку</string>
@@ -58,4 +62,27 @@
     <string name="dirac_preset_metal">Метал</string>
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Mi звук</string>
+     <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Очистка динаміка</string>
+    <string name="clear_speaker_summary">Відтворити 30-ти секундний звук для очистки динаміка</string>
+    <string name="clear_speaker_description">Включить цей параметр 1-2 рази, якщо динамік трохи забитий. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забитий, запустіть цю процедуру 2-5 разів и потрясіть телефоном. Динамік повинен бути направленим вниз</string>
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Калібровка кольорів екрану</string>
+    <string name="kcal_settings_summary">Налаштуйте кольори дисплея за допомогою KCAL</string>
+    <string name="kcal_enable_title">Налаштування кольорів екрану</string>
+    <string name="kcal_enable_summary">Включає налаштування кольорів екрана для його редагування</string>
+    <string name="kcal_not_supported">Налаштування кольору відображення не підтримуються ядром</string>
+    <string name="red_slider_title">Червоний</string>
+    <string name="green_slider_title">Зелений</string>
+    <string name="blue_slider_title">Синій</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Налаштування кольорів</string>
+    <string name="saturation_slider_title">Насиченість</string>
+    <string name="reset_default_button_title">Скинути налаштування</string>
+    <string name="reset_default_button_summary">Скидає всі настройки KCAL</string>
+    <string name="contrast_slider_title">Контраст</string>
+     
+    <!-- Vibration -->
+    <string name="vibration_title">Контроль вибрації</string>
+    <string name="vibration_strength_title">Сила</string>
 </resources>
