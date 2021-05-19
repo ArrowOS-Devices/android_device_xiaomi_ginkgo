@@ -16,6 +16,6 @@
         "remote":       "github",
         "repository":   "ThankYouMario/proprietary_vendor_qcom_sdclang",
         "target_path":  "prebuilts/clang/host/linux-x86/clang-sdllvm",
-        "branch":       "ruby"
+        "branch":       "ruby-12"
     }
 ]
