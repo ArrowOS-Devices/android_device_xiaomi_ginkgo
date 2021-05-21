@@ -85,4 +85,9 @@
     <string name="reset_default_button_title">Сбросить настройки</string>
     <string name="reset_default_button_summary">Сбрасывает все настройки KCAL</string>
     <string name="contrast_slider_title">Контраст</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Контроль вибрации</string>
+    <string name="vibration_strength_title">Сила</string>
+
 </resources>
