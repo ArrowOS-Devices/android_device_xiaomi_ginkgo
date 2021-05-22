@@ -20,6 +20,7 @@
     <string name="device_settings_title">Xiaomi Parts</string>
     <string name="device_settings_summary">Дополнительные настройки</string>
     <string name="audio_title">Аудио</string>
+	<string name="display_title">Дисплей</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Улучшение звука Mi</string>
@@ -77,6 +78,7 @@
     <string name="kcal_settings_summary">Редактируйте цвета вашего экрана, используя KCAL</string>
     <string name="kcal_enable_title">Конфигурации цветов экрана</string>
     <string name="kcal_enable_summary">Включает настройки цветов экрана для его редактирования</string>
+	<string name="kcal_not_supported">Установленное ядро не поддерживает настройку цветов экрана</string>
     <string name="red_slider_title">Красный</string>
     <string name="green_slider_title">Зелёный</string>
     <string name="blue_slider_title">Синий</string>    
