@@ -16,6 +16,9 @@ persist.vendor.btstack.enable.splita2dp=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=cherokee
 
+# Blur
+persist.sys.sf.disable_blurs=1
+
 # Charger
 ro.charger.enable_suspend=true
 
