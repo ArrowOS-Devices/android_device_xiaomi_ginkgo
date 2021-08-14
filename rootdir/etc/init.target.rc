@@ -376,14 +376,15 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #   group gps system qcom_diag diag log inet net_raw
 #   disabled
 
-on property:vold.decrypt=trigger_restart_framework
-   start vendor.cnss_diag
+#on property:vold.decrypt=trigger_restart_framework
+#   start vendor.cnss_diag
 
 service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
    class main
    user system
    group system wifi inet sdcard_rw media_rw diag
    oneshot
+   disabled
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
