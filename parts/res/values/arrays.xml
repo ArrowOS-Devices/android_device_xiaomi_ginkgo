@@ -97,4 +97,33 @@
         <item>"2,0,0,-2,-4,0,0"</item>
         <item>"10,8,-3,0,-3,5,5"</item>
     </string-array>
+    
+    <string-array name="lcd_hbm_modes" translatable="false">
+        <item>"Off"</item>
+        <item>"Low"</item>
+        <item>"Medium"</item>
+        <item>"High"</item>
+    </string-array>
+    
+    <string-array name="lcd_hbm_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+    
+    <string-array name="lcd_cabc_modes" translatable="false">
+        <item>"Off"</item>
+        <item>"Low (UI)"</item>
+        <item>"Medium (Videos)"</item>
+        <item>"High (Images)"</item>
+    </string-array>
+    
+    <string-array name="lcd_cabc_values" translatable="false">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+    </string-array>
+    
 </resources>

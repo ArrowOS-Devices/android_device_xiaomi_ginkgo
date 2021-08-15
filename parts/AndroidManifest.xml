@@ -53,6 +53,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
             <meta-data android:name="com.android.settings.dismiss"
                        android:value="9,13,30" />
@@ -68,7 +69,6 @@
             android:name=".speaker.ClearSpeakerActivity" 
             android:exported="false" 
             android:label="@string/clear_speaker_title">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -94,6 +94,36 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".display.LcdFeaturesPreferenceActivity"
+            android:label="@string/lcd_features_title"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".display.HbmTileService"
+            android:icon="@drawable/ic_hbm"
+            android:label="@string/lcd_hbm_tile_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".display.CabcTileService"
+            android:icon="@drawable/ic_cabc"
+            android:label="@string/lcd_cabc_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
 
     </application>
 </manifest>

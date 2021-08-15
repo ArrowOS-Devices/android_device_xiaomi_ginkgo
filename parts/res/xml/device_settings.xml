@@ -72,6 +72,17 @@
                 android:targetClass="org.lineageos.settings.display.KcalSettingsActivity"
                 android:targetPackage="org.lineageos.settings.display" />
         </Preference>
+
+        <Preference
+            android:key="lcd_features_settings" 
+            android:icon="@drawable/ic_cabc"
+            android:title="@string/lcd_features_title"
+            android:summary="@string/lcd_features_summary" >
+            <intent 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="org.lineageos.settings.display.LcdFeaturesPreferenceActivity"
+                android:targetPackage="org.lineageos.settings.display" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory

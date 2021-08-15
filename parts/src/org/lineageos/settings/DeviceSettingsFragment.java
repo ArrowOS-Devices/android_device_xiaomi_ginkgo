@@ -27,6 +27,7 @@ import androidx.preference.ListPreference;
 import org.lineageos.settings.R;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalSettingsActivity;
+import org.lineageos.settings.display.LcdFeaturesPreferenceActivity;
 import org.lineageos.settings.preferences.VibrationSeekBarPreference;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.utils.VibrationUtils;
@@ -39,6 +40,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private static final String PREF_PRESET = "dirac_preset_pref";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private static final String PREF_KCAL_SETTINGS = "kcal_settings";
+    private static final String PREF_LCD_FEATURES = "lcd_features_settings";
     private static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
 
     private SwitchPreference mDiracPref;
@@ -47,6 +49,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private ListPreference mPresetPref;
 
     private Preference mKcalSettingsPref;
+    private Preference mLcdFeaturesPref;
     private Preference mClearSpeakerPref;
 
     private VibrationSeekBarPreference mVibStrengthPref;
@@ -83,6 +86,13 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
         mKcalSettingsPref = (Preference) findPreference(PREF_KCAL_SETTINGS);
         mKcalSettingsPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), KcalSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        });
+
+        mLcdFeaturesPref = (Preference) findPreference(PREF_LCD_FEATURES);
+        mLcdFeaturesPref.setOnPreferenceClickListener(preference -> {
+            Intent intent = new Intent(getActivity().getApplicationContext(), LcdFeaturesPreferenceActivity.class);
             startActivity(intent);
             return true;
         });

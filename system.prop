@@ -30,6 +30,10 @@ persist.vendor.dpmhalservice.enable=1
 # Data
 persist.data.df.dev_name=rmnet_usb0
 
+# Display
+persist.lcd.cabc_mode=1
+persist.lcd.hbm_mode=0
+
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
 
