@@ -23,7 +23,6 @@ on post-fs
 
 on boot
     # DT2W
-    chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
 
     # GPU boost
