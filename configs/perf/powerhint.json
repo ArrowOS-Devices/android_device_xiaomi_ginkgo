@@ -269,12 +269,6 @@
       "Value": "0"
     },
     {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
       "PowerHint": "LOW_POWER",
       "Node": "KernelBatterySaver",
       "Duration": 0,

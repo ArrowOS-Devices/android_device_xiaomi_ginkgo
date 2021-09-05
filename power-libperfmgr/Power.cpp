@@ -91,9 +91,12 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 #endif
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled) {
+                endAllHints(mHintManager);
                 mHintManager->DoHint("SUSTAINED_PERFORMANCE");
+            } else {
+                mHintManager->EndHint("SUSTAINED_PERFORMANCE");
             }
-            mSustainedPerfModeOn = true;
+            mSustainedPerfModeOn = enabled;
             break;
         case Mode::LOW_POWER:
             if (enabled) {
@@ -105,9 +108,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             mBatterySaverOn = enabled;
             break;
         case Mode::LAUNCH:
-            if (mSustainedPerfModeOn) {
-                break;
-            }
             [[fallthrough]];
 #ifndef TAP_TO_WAKE_NODE
         case Mode::DOUBLE_TAP_TO_WAKE:
@@ -126,7 +126,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::AUDIO_STREAMING_LOW_LATENCY:
             [[fallthrough]];
         default:
-            if (mBatterySaverOn) break;
+            if (mBatterySaverOn || mSustainedPerfModeOn) {
+                break;
+            }
             if (enabled) {
                 mHintManager->DoHint(toString(type));
             } else {
