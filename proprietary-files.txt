@@ -2017,6 +2017,7 @@ vendor/lib/libqmiservices.so|ed6785cccaa6e01be1af7e7a8c8d696eeb78e05f
 
 # Radio - from LA.UM.9.11.r1-04500-NICOBAR.0
 etc/permissions/privapp-permissions-qti.xml|3eda27003bad39514039190d0d7eb675ba034cb9
+etc/sysconfig/qti_whitelist.xml|36d11f2735fcd9ad3ac5639f3c0bb011941b8335
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
 -system_ext/app/DeviceInfo/DeviceInfo.apk|4ff56a7e5abfe2faeb95ae8c967ef4cf72589b07
 -system_ext/app/DynamicDDSService/DynamicDDSService.apk|502329cf448eb3b7e2736fcad59e4eacc48f93e6
