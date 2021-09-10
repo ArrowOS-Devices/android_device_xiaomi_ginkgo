@@ -85,4 +85,18 @@
     <string name="reset_default_button_title">Сбросить настройки</string>
     <string name="reset_default_button_summary">Сбрасывает все настройки KCAL</string>
     <string name="contrast_slider_title">Контраст</string>
+	
+
+    <!-- Vibration -->
+    <string name="vibration_title">Настройки вибрации</string>
+    <string name="vibration_strength_title">Сила</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Настройки ЖК-дисплея</string>
+    <string name="lcd_features_summary">Режим повышенной яркости, контентная регулировка</string>
+    <string name="lcd_hbm_title">Режим повышенной яркости</string>
+    <string name="lcd_hbm_tile_title">Повысить яркость</string>
+    <string name="lcd_cabc_title">Контентная регулировка</string>
+    <string name="lcd_features_info">Режим повышенной яркости увеличивает максимальную яркость дисплея для улучшения видимости при солнечном свете. Увеличивает энергопотребление. Может привести к нагреву дисплея.\n\nКонтентная регулировка регулирует яркость дисплея и цветов в зависимости от текущего содержимого, чтобы снизить энергопотребление без ухудшения качества изображения.</string>
+
 </resources>
