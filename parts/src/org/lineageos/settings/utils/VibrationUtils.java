@@ -16,8 +16,7 @@
 
 package org.lineageos.settings.utils;
 
-import android.content.Context;
-import android.provider.Settings;
+import android.content.SharedPreferences;
 
 public class VibrationUtils {
 
@@ -38,8 +37,8 @@ public class VibrationUtils {
         FileUtils.writeLine(VIBRATION_STRENGTH_PATH, Integer.toString(strength));
     }
 
-    public static void setCurrentVibStrength(Context context) {
-        int vibStrength = Settings.Secure.getInt(context.getContentResolver(), PREF_VIBRATION_STRENGTH, 85);
+    public static void setCurrentVibStrength(SharedPreferences sharedPrefs) {
+        int vibStrength = sharedPrefs.getInt(PREF_VIBRATION_STRENGTH, 85);
         setVibStrength(vibStrength);
     }
 

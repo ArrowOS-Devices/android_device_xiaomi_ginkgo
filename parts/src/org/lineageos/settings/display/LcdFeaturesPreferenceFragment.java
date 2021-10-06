@@ -39,12 +39,6 @@ public class LcdFeaturesPreferenceFragment extends PreferenceFragment
     private ListPreference mCabcPref;
 
     @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.lcd_features_settings);
         mHbmPref = (ListPreference) findPreference(KEY_HBM);

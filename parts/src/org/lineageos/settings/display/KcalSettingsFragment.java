@@ -20,27 +20,29 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.widget.Switch;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SeekBarPreference;
-import androidx.preference.SwitchPreference;
+
+import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import org.lineageos.settings.R;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.display.KcalUtils;
 
 public class KcalSettingsFragment extends PreferenceFragment implements
-        OnPreferenceChangeListener {
+        OnPreferenceChangeListener, OnMainSwitchChangeListener {
 
     private static final String TAG = "KcalSettings";
 
     private SharedPreferences mSharedPrefs;
 
-    private SwitchPreference mKcalSwitchPreference;
+    private MainSwitchPreference mKcalSwitchPreference;
     private SeekBarPreference mRedColorSlider;
     private SeekBarPreference mGreenColorSlider;
     private SeekBarPreference mBlueColorSlider;
@@ -51,10 +53,9 @@ public class KcalSettingsFragment extends PreferenceFragment implements
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.kcal_settings);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         mSharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mKcalSwitchPreference = (SwitchPreference) findPreference("kcal_enable");
+        mKcalSwitchPreference = (MainSwitchPreference) findPreference("kcal_enable");
         mResetButton = (Preference) findPreference("reset_default_button");
 
         // Check if the node exists and enable / disable the preference depending on the case
@@ -72,9 +73,6 @@ public class KcalSettingsFragment extends PreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         switch (preference.getKey()){
-            case "kcal_enable":
-                KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, (Boolean) newValue ? 1 : 0);
-                break;
             case "red_slider":
                 KcalUtils.writeConfigToNode(KcalUtils.KCAL_RGB_NODE, 1, (Integer) newValue);
                 mRedColorSlider.setSummary(String.valueOf(newValue));
@@ -100,20 +98,15 @@ public class KcalSettingsFragment extends PreferenceFragment implements
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            getActivity().onBackPressed();
-            return true;
-        }
-        return false;
+    public void onSwitchChanged(Switch switchView, boolean isChecked) {
+        mKcalSwitchPreference.setChecked(isChecked);
+        KcalUtils.writeConfigToNode(KcalUtils.KCAL_ENABLE_NODE, 0, isChecked ? 1 : 0);
     }
 
     // Configure the switches, preferences and sliders
     private void configurePreferences() {
         mKcalSwitchPreference.setEnabled(true);
-        mKcalSwitchPreference.setOnPreferenceChangeListener(this);
-        mKcalSwitchPreference = (SwitchPreference) findPreference("kcal_enable");
-        mResetButton = (Preference) findPreference("reset_default_button");
+        mKcalSwitchPreference.addOnSwitchChangeListener(this);
 
         // Set the preference so it resets all the other preference's values, and applies the configuration on click
         mResetButton.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -130,7 +123,6 @@ public class KcalSettingsFragment extends PreferenceFragment implements
                 return true;
             }
         });
-
 
         mRedColorSlider = (SeekBarPreference) findPreference("red_slider");
         configureSlider(mRedColorSlider, this);

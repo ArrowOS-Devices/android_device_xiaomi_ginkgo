@@ -16,11 +16,15 @@
 
 package org.lineageos.settings;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
+import androidx.preference.SeekBarPreference;
 import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 
@@ -28,7 +32,6 @@ import org.lineageos.settings.R;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalSettingsActivity;
 import org.lineageos.settings.display.LcdFeaturesPreferenceActivity;
-import org.lineageos.settings.preferences.VibrationSeekBarPreference;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.utils.VibrationUtils;
 
@@ -52,9 +55,11 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private Preference mLcdFeaturesPref;
     private Preference mClearSpeakerPref;
 
-    private VibrationSeekBarPreference mVibStrengthPref;
+    private SeekBarPreference mVibStrengthPref;
 
     private DiracUtils mDiracUtils;
+
+    private Vibrator mVibrator;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -97,11 +102,15 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
             return true;
         });
 
-        mVibStrengthPref = (VibrationSeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
+        mVibrator = (Vibrator) getActivity().getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
+
+        mVibStrengthPref = (SeekBarPreference) findPreference(PREF_VIBRATION_STRENGTH);
 
         if (VibrationUtils.isAvailable()) {
             mVibStrengthPref.setOnPreferenceChangeListener(this);
             mVibStrengthPref.setValue(VibrationUtils.getVibStrength());
+            mVibStrengthPref.setSummary(Integer.toString(VibrationUtils.getVibStrength()) + "%");
+            mVibStrengthPref.setMin(10);
         } else {
             mVibStrengthPref.setEnabled(false);
         }
@@ -121,7 +130,11 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
                 mDiracUtils.setLevel(String.valueOf(newValue));
                 return true;
             case PREF_VIBRATION_STRENGTH:
+                mVibStrengthPref.setSummary(String.valueOf(newValue) + "%");
                 VibrationUtils.setVibStrength((int) newValue);
+                if (mVibrator.hasVibrator()) {
+                    mVibrator.vibrate(VibrationEffect.createOneShot(75, VibrationEffect.DEFAULT_AMPLITUDE));
+                }
                 return true;
             default:
                 return false;

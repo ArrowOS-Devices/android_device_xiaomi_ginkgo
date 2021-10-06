@@ -46,7 +46,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             KcalUtils.writeCurrentSettings(sharedPrefs);
 
         if (VibrationUtils.isAvailable()) {
-            VibrationUtils.setCurrentVibStrength(context);
+            VibrationUtils.setCurrentVibStrength(sharedPrefs);
         }
     }
 }

@@ -34,7 +34,7 @@
     <application
         android:label="@string/device_settings_app_name"
         android:persistent="true"
-        android:theme="@style/DeviceSettingsTheme">
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver android:name=".BootCompletedReceiver">
             <intent-filter android:priority="1000">
@@ -57,8 +57,8 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.dismiss"
                        android:value="9,13,30" />
-            <meta-data android:name="com.android.settings.bg.hint"
-                       android:resource="@color/device_settings_hp_bg" />
+            <meta-data android:name="com.android.settings.icon"
+                       android:resource="@drawable/ic_device_settings" />
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.summary"

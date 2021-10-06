@@ -14,20 +14,25 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/kcal_settings_title">
 
-    <SwitchPreference
-        android:key="kcal_enable"
+    <com.android.settingslib.widget.MainSwitchPreference
         android:defaultValue="false"
-        android:icon="@drawable/ic_kcal"
-        android:title="@string/kcal_enable_title"
-        android:summary="@string/kcal_enable_summary" />
+        android:key="kcal_enable"
+        android:title="@string/kcal_enable" />
 
     <Preference
         android:key="reset_default_button"
         android:title="@string/reset_default_button_title"
         android:icon="@drawable/ic_reset"
         android:summary="@string/reset_default_button_summary" />
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="preview_layout"
+        android:layout="@layout/kcal_preview"
+        android:selectable="false" />
 
     <PreferenceCategory
         android:key="kcal_rgb_preference_category"

@@ -16,29 +16,20 @@
 
 package org.lineageos.settings.display;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import org.lineageos.settings.R;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class KcalSettingsActivity extends Activity {
+public class KcalSettingsActivity extends CollapsingToolbarBaseActivity  {
 
     private static final String TAG = "kcal_settings";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kcal);
-        getFragmentManager().beginTransaction().replace(R.id.fragment_kcal, new KcalSettingsFragment(), TAG).commit();
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        getFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, new KcalSettingsFragment(), TAG)
+                .commit();
     }
 }
