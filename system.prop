@@ -36,6 +36,7 @@ persist.vendor.ims.disableQXDMLogs=1
 
 # IORap
 iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 ro.iorapd.enable=true
 
 # Media
