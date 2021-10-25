@@ -14,7 +14,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     GinkgoMiuiCamera \
-    NoCutoutOverlay \
+    GinkgoNoCutoutOverlay \
     NotchBarKiller \
     WillowFrameworkRes
 

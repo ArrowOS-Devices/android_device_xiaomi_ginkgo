@@ -17,7 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that masks the display cutout, i.e. it shrinks the display such that the display cutout is no longer visible.-->
-    <string name="display_cutout_emulation_overlay">Hide</string>
+    <string name="display_cutout_emulation_overlay">Hide Notch</string>
 
 </resources>
-
