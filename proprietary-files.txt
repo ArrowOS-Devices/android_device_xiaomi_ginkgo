@@ -1378,9 +1378,6 @@ vendor/lib/libmmcamera_ginkgo_s5kgm1_ofilm_ii_eeprom.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i.so
 vendor/lib/libmmcamera_ginkgo_s5kgm1_sunny_i_eeprom.so
 
-# Camera service
-lib/libcameraservice.so
-
 # CDSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
