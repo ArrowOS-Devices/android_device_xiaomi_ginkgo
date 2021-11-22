@@ -489,3 +489,8 @@ on property:sys.thermallct.isincall=1
 on property:sys.thermallct.isincall=0
    write /sys/class/power_supply/battery/device/thermalcall 0
 
+on post-fs && property:ro.boot.product.hardware.sku=ginkgo
+    mount none /vendor/firmware_mnt/image/bdf_c3j.bin /vendor/firmware_mnt/image/bdwlan.bin bind
+
+on post-fs && property:ro.boot.product.hardware.sku=willow
+    mount none /vendor/firmware_mnt/image/bdf_c3x.bin /vendor/firmware_mnt/image/bdwlan.bin bind
