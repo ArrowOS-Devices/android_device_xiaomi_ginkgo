@@ -1871,18 +1871,6 @@ vendor/lib64/unnhal-acc-hvx.so|00eb79608cb6e3f19eaf9389632fdbfa03b2df62
 vendor/bin/nqnfcinfo|be17822d9e7e8445db8d100e8e61f8e397a48313
 vendor/lib/libsn100u_fw.so|2bc1887b71b4557b75e26465f6917525bfd43e4a
 
-# PASR Manager - from LA.UM.9.11.r1-04500-NICOBAR.0
--vendor/app/pasrservice/pasrservice.apk|6d4e8bab2426b03231531ec09bce922601b8e8e6
-vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|27dd1f54cfdc65f365c6b63e9b13bdb6ade5aa70
-vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so|c4aa82f48eb201da1baffa7e7b0d4c02c3144a9e
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|a22cacb4a946ee1644ee8f78f540c9d2a7bc7998
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|b159d09ea88e442009d56cbd6daca7bd1f5cb34b
-vendor/lib/vendor.qti.power.pasrmanager@1.0.so|52bb4592e829227f1417836ac3d2560a6e8fc0e7
-vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|4e83bd83fa439f15dc3c0a2256eadd81d6c45386
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|89b9cf249df7161bec5fdb333c48296ad1a700b5
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|9144cc8e1eff77c79e0e87f48aed0ced86dcf0cd
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|98df4e4e8dab418c6476bb9f2d8b26f8e5ab62d9
-
 # Performance - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|6343b2865a7f84a1cf51ee9731eb5defac116cb5
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|87c9c2354b94347d70db1987a6aa6562a0e08d28

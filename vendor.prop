@@ -180,10 +180,6 @@ ro.incremental.enable=1
 # Keystore
 ro.hardware.keystore_desede=true
 
-# PASR
-vendor.power.pasr.enabled=true
-vendor.pasr.activemode.enabled=true
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
