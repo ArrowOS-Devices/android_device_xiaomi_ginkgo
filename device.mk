@@ -171,6 +171,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
+    libavservices_minijail.vendor \
     libbatching \
     libgeofencing \
     libgnss
@@ -468,14 +469,3 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
-    libnl \
-    libqdMetaData \
-    libqdMetaData.system \
-    libqdMetaData.vendor \
-    libwfdaac_vendor \
-    vendor.display.config@2.0
