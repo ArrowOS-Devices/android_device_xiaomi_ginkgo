@@ -32,7 +32,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 PRODUCT_NAME := arrow_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 8
+PRODUCT_MODEL := Redmi Note 8/8T
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 DEVICE_MAINTAINER := Adithya (ghostrider_reborn)
