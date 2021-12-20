@@ -1,4 +1,4 @@
-# Device proprietary files - from ginkgo MIUI V12.0.2.0.RCOMIXM Global Stable package, unless pinned
+# Device proprietary files - from ginkgo MIUI V12.5.1.0.RCOMIXM Global Stable package, unless pinned
 
 # ADSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
