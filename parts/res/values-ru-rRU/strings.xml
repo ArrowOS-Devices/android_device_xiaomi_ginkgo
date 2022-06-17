@@ -90,7 +90,7 @@
     <string name="contrast_slider_title">Контраст</string>
 
     <!-- Vibration -->
-    <string name="vibration_title">Контроль вибрации</string>
+    <string name="vibration_title">Вибрация</string>
     <string name="vibration_strength_title">Сила выбирации</string>
 	
     <!-- LCD Features -->
