@@ -20,6 +20,7 @@
     <string name="device_settings_title">Xiaomi Parts</string>
     <string name="device_settings_summary">Дополнительные настройки</string>
     <string name="audio_title">Аудио</string>
+    <string name="display_title">Экран</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Улучшение звука Mi</string>
@@ -63,6 +64,7 @@
     <string name="dirac_preset_country">Кантри</string>
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
+    <string name="dirac_preset_bass_booster">Усилитель басов</string>
 
     <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Mi звук</string>
@@ -75,6 +77,7 @@
     <!-- Kcal settings -->
     <string name="kcal_settings_title">Калибровка цветов экрана</string>
     <string name="kcal_settings_summary">Редактируйте цвета вашего экрана, используя KCAL</string>
+    <string name="kcal_enable">Использовать KCAL</string>
     <string name="kcal_enable_title">Конфигурации цветов экрана</string>
     <string name="kcal_enable_summary">Включает настройки цветов экрана для его редактирования</string>
     <string name="red_slider_title">Красный</string>
@@ -85,4 +88,16 @@
     <string name="reset_default_button_title">Сбросить настройки</string>
     <string name="reset_default_button_summary">Сбрасывает все настройки KCAL</string>
     <string name="contrast_slider_title">Контраст</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Контроль вибрации</string>
+    <string name="vibration_strength_title">Сила выбирации</string>
+	
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Особенности LCD</string>
+    <string name="lcd_features_summary">Режим высокой яркости, CABC</string>
+    <string name="lcd_hbm_title">Режим высокой яркости</string>
+    <string name="lcd_hbm_tile_title">Режим высокой яркости</string>
+    <string name="lcd_cabc_title">Режим CABC</string>
+    <string name="lcd_features_info">Режим высокой яркости увеличивает максимальную яркость дисплея для улучшения видимости при солнечном свете. Увеличивает энергопотребление. CABC (Content Adaptive Backlight Control) регулирует яркость дисплея и подсветки в зависимости от отображаемого в данный момент контента, чтобы снизить энергопотребление без ухудшения характеристик.</string>
 </resources>
