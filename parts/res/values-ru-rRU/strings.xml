@@ -17,7 +17,7 @@
 -->
 <resources>
      <!-- Xiaomi Parts -->
-    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_title">Настройки Xiaomi</string>
     <string name="device_settings_summary">Дополнительные настройки</string>
     <string name="audio_title">Аудио</string>
     <string name="display_title">Экран</string>
