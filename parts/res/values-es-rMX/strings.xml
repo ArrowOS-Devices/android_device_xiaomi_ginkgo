@@ -16,11 +16,18 @@
      limitations under the License.
 -->
 <resources>
+<!-- Xiaomi Parts -->
+    <string name="device_settings_title">Xiaomi Parts</string>
+    <string name="device_settings_summary">Configuraciones extra</string>
+    <string name="audio_title">Audio</string>
+    <string name="display_title">Pantalla</string>
+
     <!-- Dirac settings -->
-    <string name="dirac_title">Mi Sound Enhancer</string>
+    <string name="dirac_title">Potenciador Mi Sound</string>
     <string name="dirac_summary">Optimizar la calidad del audio</string>
     <string name="dirac_headset_title">Selecciona el tipo de auriculares</string>
     <string name="dirac_preset_title">Selecciona un preajuste</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Predeterminado</string>
     <string name="dirac_headset_earbuds">Auriculares de tapón Mi</string>
@@ -44,6 +51,7 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Predeterminado</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -56,4 +64,39 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Potenciador Mi Sound</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpiar altavoz</string>
+    <string name="clear_speaker_summary">Reproduce un audio de 30 segundos para limpiar el altavoz</string>
+    <string name="clear_speaker_description">Ejecute esta función una o dos veces si encuentra que su altavoz está ligeramente bloqueado por el polvo. Establece el volumen multimedia al máximo.\n\nSi el altavoz está muy bloqueado, realice esta función de 2 a 5 veces mientras agita su dispositivo con el altavoz hacia abajo.\n\nADVERTENCIA: Asegúrese de que todos los audífonos estén desconectados.</string>
+
+    <!-- Kcal settings -->
+    <string name="kcal_settings_title">Calibración del color de la pantalla</string>
+    <string name="kcal_settings_summary">Ajusta los colores de tu pantalla usando KCAL</string>
+    <string name="kcal_enable">Usar KCAL</string>
+    <string name="kcal_not_supported">La configuración de color de la pantalla no es compatible con el kernel</string>
+    <string name="red_slider_title">Rojo</string>
+    <string name="green_slider_title">Verde</string>
+    <string name="blue_slider_title">Azul</string>    
+    <string name="kcal_rgb_preference_category_title">RGB</string>
+    <string name="kcal_calibration_preference_category_title">Calibración de color</string>
+    <string name="saturation_slider_title">Saturación</string>
+    <string name="reset_default_button_title">Restablecer a la configuración predeterminada</string>
+    <string name="reset_default_button_summary">Restablecer todas las configuraciones de esta pantalla</string>
+    <string name="contrast_slider_title">Contraste</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Control de vibración</string>
+    <string name="vibration_strength_title">Intensidad</string>
+
+    <!-- LCD Features -->
+    <string name="lcd_features_title">Caracteristicas LCD</string>
+    <string name="lcd_features_summary">Modo de Brillo Alto, CIAC</string>
+    <string name="lcd_hbm_title">Modo de Brillo Alto (MBA)</string>
+    <string name="lcd_hbm_tile_title">MBA</string>
+    <string name="lcd_cabc_title">Modo CIAC</string>
+    <string name="lcd_features_info">Modo de Brillo Alto (MBA) aumenta el brillo máximo de la pantalla para mejorar la visibilidad bajo la luz del sol. Aumenta el consumo de batería.\n\nCIAC (Control de Iluminación Adaptable al Contenido) ajusta el brillo de la pantalla y la iluminación de fondo según el contenido que se muestra actualmente, para reducir el consumo de energía sin degradación.</string>
 </resources>
