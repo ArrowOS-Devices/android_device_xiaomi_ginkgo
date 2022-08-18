@@ -77,7 +77,7 @@
     <!-- Kcal settings -->
     <string name="kcal_settings_title">Калибровка цветов экрана</string>
     <string name="kcal_settings_summary">Редактируйте цвета вашего экрана, используя KCAL</string>
-    <string name="kcal_enable">Использовать KCAL</string>
+    <string name="kcal_enable">KCAL</string>
     <string name="kcal_enable_title">Конфигурации цветов экрана</string>
     <string name="kcal_enable_summary">Включает настройки цветов экрана для его редактирования</string>
     <string name="red_slider_title">Красный</string>
