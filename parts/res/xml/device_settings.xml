@@ -84,6 +84,17 @@
                 android:targetClass="org.lineageos.settings.display.LcdFeaturesPreferenceActivity"
                 android:targetPackage="org.lineageos.settings.display" />
         </Preference>
+
+        <Preference
+            android:key="doze_settings"
+            android:icon="@drawable/ic_doze_wake"
+            android:title="@string/ambient_display_gestures_title"
+            android:summary="@string/ambient_display_gestures_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
+                android:targetPackage="org.lineageos.settings.doze" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
