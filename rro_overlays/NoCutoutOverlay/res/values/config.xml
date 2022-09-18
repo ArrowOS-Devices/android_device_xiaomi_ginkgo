@@ -54,4 +54,8 @@
     <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
 
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">28dp</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+
 </resources>
