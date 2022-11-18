@@ -40,11 +40,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# IORap
-iorapd.readahead.enable=true
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-ro.iorapd.enable=true
-
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
