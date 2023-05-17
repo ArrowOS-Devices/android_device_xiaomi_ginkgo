@@ -126,6 +126,7 @@
       "Name": "SchedBoost",
       "Path": "/proc/sys/kernel/sched_boost",
       "Values": [
+        "2",
         "1",
         "0"
       ],
@@ -231,6 +232,12 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "1401600"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "2"
     },
     {
       "PowerHint": "LAUNCH",
